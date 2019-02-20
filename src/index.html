@@ -5,6 +5,38 @@
     <title>Webpack Showcase</title>
 </head>
 <body>
-    <h1>Welcome to Class.</h1>
+    <h1>Just the tip... calculator.</h1>
+    <div class="container">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Tip Amount:</span>
+            </div>
+            <input type="text" id="tipAmount" class="form-control" placeholder="0.00" aria-label="Tip Amount" aria-describedby="tipAmount" readonly>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Total:</span>
+            </div>
+            <input type="text" id="totalAmount" class="form-control" placeholder="0.00" aria-label="Total" aria-describedby="totalAmount" readonly>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">$</span>
+            </div>
+            <input type="text" placeholder="Check amount..." class="form-control" aria-label="Amount" id="checkAmount">            
+        </div>
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-secondary active">
+                <input type="radio" class="percentRadio" name="tipPercent" id="15percent" autocomplete="off" checked> 15%
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" class="percentRadio" name="tipPercent" id="20percent" autocomplete="off"> 20%
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" class="percentRadio" name="tipPercent" id="25percent" autocomplete="off"> 25%
+            </label>
+        </div>
+
+    </div>
 </body>
 </html>
