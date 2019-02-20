@@ -15,8 +15,6 @@ $('.percentRadio').on('click', (e)=>{
 });
 
 let calculateStuff = function(){
-    // get the amount from the check
-    
     if(!$.isNumeric(checkAmount.value)){
         $('#checkAmount').addClass('error');
         tipAmount.val(0);
