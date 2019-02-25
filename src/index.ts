@@ -1,5 +1,5 @@
 import './styles.css';
-import { addClass, removeClass, roundToTwoPlaces } from './utils';
+import { addClass, matches, removeClass, roundToTwoPlaces } from './utils';
 
 const tipAmount = document.querySelector('#tipAmount') as HTMLInputElement; 
 const totalAmount = document.querySelector('#totalAmount') as HTMLInputElement;
@@ -21,10 +21,6 @@ function setActiveRadio(event:any){
 document.querySelectorAll('.percentRadio').forEach((e:any)=>{
     e.addEventListener('click', setActiveRadio);
 });
-
-var matches = function(el:any, selector:any) {
-    return (el.matches || el.matchesSelector || el.msMatchesSelector || el.mozMatchesSelector || el.webkitMatchesSelector || el.oMatchesSelector).call(el, selector);
-  };
 
 let calculateStuff = function(){
     if(isNaN(parseFloat(checkAmount.value))){
