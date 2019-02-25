@@ -6,7 +6,6 @@ const totalAmount = document.querySelector('#totalAmount') as HTMLInputElement;
 const checkAmount = document.getElementById('checkAmount') as HTMLInputElement;
 const percent15btn = document.getElementById('15percent');
 const percent20btn = document.getElementById('20percent');
-const percent25btn = document.getElementById('25percent');
 
 function setActiveRadio(event:any){
     document.querySelectorAll('.percentRadio').forEach((e:any)=>{
